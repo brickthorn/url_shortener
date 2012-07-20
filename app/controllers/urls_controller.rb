@@ -20,7 +20,6 @@ class UrlsController < ApplicationController
 
   def create
     @url = Url.create(:link =>params[:link])
-    # redirect_to "/urls/#{link.id}"
     redirect_to url_path(@url)
   end
 
